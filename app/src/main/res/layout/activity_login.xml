@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/transprant_color"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_LOGOIMAGE"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/tv_logintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_LOGOIMAGE"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:clickable="false"
+                android:visibility="gone"
+                android:text="@string/st_appname"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_logintitle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/app_name"
+                android:layout_below="@+id/iv_LOGOIMAGE"
+                android:src="@drawable/zaparound_text" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_Buttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_logintitle"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rl_validation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/validation_background">
+                    <TextView
+                        android:id="@+id/tv_validation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:focusable="true"
+                        android:layout_centerInParent="true"
+                        android:text=""
+                        android:gravity="center"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_edittext">
+                    <EditText
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:background="@color/transprant_color"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/transprant_color"
+                        android:cursorVisible="false"
+                        android:inputType="text"
+                        >
+                        <requestFocus />
+                    </EditText>
+                    <ImageView
+                        android:id="@+id/iv_userimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/username_icon_inactive" />
+
+                    <EditText
+                        android:id="@+id/et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/iv_userimage"
+                        android:layout_toEndOf="@+id/iv_userimage"
+                        android:hint="@string/st_usernamehint"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:background="@color/transprant_color"
+                        android:gravity="bottom"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:paddingBottom="13dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium">
+                    </EditText>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_edittext">
+
+                    <ImageView
+                        android:id="@+id/iv_password"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/password_icon_inactive" />
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/iv_password"
+                        android:layout_toEndOf="@+id/iv_password"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:background="@color/transprant_color"
+                        android:gravity="bottom"
+                        android:hint="@string/st_passwirdhint"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:paddingBottom="14dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                   >
+
+                    <Button
+                        android:id="@+id/bt_Loginbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/login_btn_background"
+                        android:focusable="true"
+                        android:onClick="Loginuser"
+                        android:text="@string/st_mylogin"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_forgotpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="10dp"
+                   android:onClick="Clickview"
+                    android:gravity="center"
+                    android:text="@string/st_forgotpassword"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Bottomlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:onClick="Clickview"
+                android:paddingBottom="15dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ll_Buttonlayout"
+                android:layout_alignLeft="@+id/ll_Buttonlayout"
+                android:layout_alignStart="@+id/ll_Buttonlayout">
+
+                <TextView
+                    android:id="@+id/tv_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="@string/st_newhere"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_createaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="@string/st_createacount"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

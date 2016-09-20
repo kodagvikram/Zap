@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_border">
+
+    <RelativeLayout
+        android:id="@+id/rl_backcolor"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_checkin_adaptermaillayout"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/iv_checkinlogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/zaparound_gray_icon" />
+
+        <ImageView
+            android:id="@+id/iv_rightarrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/gray_arrow_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/iv_checkinlogo"
+            android:layout_toLeftOf="@+id/iv_rightarrow"
+            android:layout_toRightOf="@+id/iv_checkinlogo"
+            android:layout_toStartOf="@+id/iv_rightarrow"
+            android:background="@color/transprant_color">
+
+            <TextView
+                android:id="@+id/tv_checkintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/st_checkintextcolor" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_checkintitle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/checkin_list_buttonback"
+                android:clickable="false"
+                android:paddingBottom="0dp"
+                android:paddingEnd="08dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="08dp"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/dummylocatio"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/locationbutton_icon" />
+
+                <TextView
+                    android:id="@+id/bt_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@+id/dummylocatio"
+                    android:layout_toRightOf="@+id/dummylocatio"
+                    android:background="@color/transprant_color"
+                    android:gravity="start|center"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/cl_miles" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

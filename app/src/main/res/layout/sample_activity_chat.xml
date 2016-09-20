@@ -1,0 +1,264 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transprant_color">
+
+        <include
+            android:id="@+id/tool_bar1"
+            layout="@layout/setting_toolbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="#FFFFFF">
+
+        <com.zaparound.UserMyChatCircularLogoPicture
+            android:id="@+id/img_round"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dummy_user_icon" />
+
+
+        <RelativeLayout
+            android:id="@+id/middlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/img_round"
+            android:layout_toRightOf="@+id/img_round"
+            android:background="@color/transprant_color">
+
+            <TextView
+                android:id="@+id/tv_usernametitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/st_checkintextcolor" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_usernametitle"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:clickable="false"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/cl_miles" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_imageclick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_toLeftOf="@+id/rl_dataclick"
+            android:layout_toStartOf="@+id/rl_dataclick"/>
+        <RelativeLayout
+            android:id="@+id/rl_dataclick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_toRightOf="@+id/img_round"
+            android:layout_toEndOf="@+id/img_round"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeBottomArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <!-- <ImageButton
+                 android:id="@+id/buttonSendSmiley"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:adjustViewBounds="true"
+
+                 android:background="?android:selectableItemBackground"
+                 android:paddingLeft="6dp"
+                 android:paddingRight="6dp"
+
+                 android:scaleType="fitCenter"
+                 android:src="@drawable/smiley_button" />
+             <ImageButton
+                 android:id="@+id/buttonSendSticker"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_alignBottom="@+id/editTextChatMessage"
+                 android:adjustViewBounds="true"
+                 android:background="?android:selectableItemBackground"
+                 android:padding="6dp"
+                 android:layout_toLeftOf="@+id/buttonSendMessage"
+                 android:scaleType="fitCenter"
+                 android:src="@drawable/sticker_button" />
+                 -->
+
+            <Button
+                android:id="@+id/buttonSendMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignBottom="@+id/editTextChatMessage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_background"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:text="@string/st_sendbtn"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextChatMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toLeftOf="@+id/buttonSendMessage"
+                android:layout_toStartOf="@+id/buttonSendMessage"
+                android:autoLink="web"
+                android:background="@drawable/edittext_background"
+                android:textCursorDrawable="@null"
+                android:ems="10"
+                android:hint="@string/st_typemessagehint"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:linksClickable="true"
+                android:paddingBottom="07dp"
+                android:paddingEnd="07dp"
+                android:paddingRight="07dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="07dp"
+                android:scrollbars="vertical"
+                android:textColor="#979797"
+                android:textColorHint="#979797">
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/footer_for_emoticons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/keyboard_height"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <!--location Layout-->
+    <RelativeLayout
+        android:id="@+id/rl_nolocationfoundlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_below="@+id/user_info"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transprant_color"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_LOGOIMAGE"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/no_contact_found_icon" />
+
+            <TextView
+                android:id="@+id/tv_logintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_LOGOIMAGE"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:clickable="false"
+                android:text="@string/st_Messages"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/buttonbg_color"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_validation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_logintitle"
+                android:layout_centerHorizontal="true"
+                android:background="?attr/selectableItemBackground"
+                android:focusable="true"
+                android:visibility="gone"
+                android:text="@string/st_nouserfound"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cl_popupsubtextcolor"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout> <!--end of location layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_below="@+id/user_info"
+        android:background="@color/transprant_color">
+
+        <ListView
+            android:id="@+id/listViewChatMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:divider="@null"
+            android:fastScrollEnabled="false"
+            android:foregroundGravity="bottom" />
+    </RelativeLayout>
+</RelativeLayout>

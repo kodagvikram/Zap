@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zaparound.NearbyLocationActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transprant_color">
+
+        <include
+            android:id="@+id/tool_bar1"
+            layout="@layout/nearby_tollbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_MapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="@color/cl_circlefill">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <!--end of map-->
+
+    <RelativeLayout
+        android:id="@+id/rl_topraduslayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rl_MapLayout"
+        android:background="@color/loginbtn_color">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_rightlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/cl_4milesbg"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/tv_milesnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="false"
+                android:text="@string/st_1miles"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_taptochange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_milesnumber"
+                android:layout_centerHorizontal="true"
+                android:clickable="false"
+                android:text="@string/st_taptochange"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/cl_tap" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_radusimage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/rl_rightlayout"
+            android:layout_toStartOf="@+id/rl_rightlayout"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/radius_location_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_radusimage"
+            android:layout_toStartOf="@+id/iv_radusimage"
+            android:background="@color/transprant_color"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp">
+
+            <TextView
+                android:id="@+id/tv_radisfortop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:maxLines="2"
+                android:text="@string/st_radiusfor"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_updateradus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true" />
+    </RelativeLayout>
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/swipeRefreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/rl_topraduslayout">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/transprant_color">-->
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_topraduslayout"
+        android:background="@color/transprant_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transprant_color">
+
+            <TextView
+                android:id="@+id/tv_gpsmess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:text="@string/st_toplocations"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/buttonbg_color"
+                android:visibility="visible" />
+
+
+
+            <!--location Layout-->
+            <RelativeLayout
+                android:id="@+id/rl_nolocationfoundlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_gpsmess"
+                android:background="@color/transprant_color"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transprant_color"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_LOGOIMAGE"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/smilly_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_logintitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_LOGOIMAGE"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:clickable="false"
+                        android:text="@string/st_nolocationfound"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/buttonbg_color"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_Buttonlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_logintitle"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rl_validation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/validation_background"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/tv_validation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="?attr/selectableItemBackground"
+                                android:focusable="true"
+                                android:padding="10dp"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp">
+
+                            <Button
+                                android:id="@+id/bt_enablegps"
+                                android:layout_width="250dp"
+                                android:layout_height="40dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/login_btn_background"
+                                android:focusable="true"
+                                android:text="@string/st_refresh"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout> <!--end of location layout-->
+
+        </RelativeLayout>
+    </ScrollView>
+        <!--</RelativeLayout>-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_Nearbylocationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_topraduslayout"
+        android:background="@color/transprant_color"
+        android:visibility="visible"
+        android:paddingTop="30dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_nearby_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+</RelativeLayout>

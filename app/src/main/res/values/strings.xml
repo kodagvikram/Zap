@@ -1,0 +1,284 @@
+<resources>
+    <string name="app_name">Zaparound</string>
+
+    <!--Webservice Strings-->
+    <string name="st_parameter_missing">102 required parameter missing</string>
+    <string name="st_invalid_privatekey">103 Invalid private key</string>
+    <string name="st_pagenotfound">106 Page Not Found</string>
+    <string name="st_registrationfail">There is problem in Registration. Please Re-Register.</string>
+    <string name="st_invalid_verificationcode">Invalid varification code</string>
+    <string name="st_internet_error">it seems we are experiencing problems connecting to Zap</string>
+
+
+    <!--Web service Validation strings-->
+    <!--Create Login page-->
+    <string name="st_emailregistered">Email is alreary registered</string>
+    <string name="st_mobileregistered">Mobile is alreary registered</string>
+    <string name="st_emailmobileregistered">Email and Mobile is alreary registered</string>
+    <!--Username Validation-->
+    <string name="st_usernameregistered">UserName is alreary registered</string>
+
+    <string name="st_ivalidotp">Verification code incorrect</string>
+    <string name="st_failstatus">Fail to update data</string>
+    <string name="st_successfullyupdated">Successfully Updated.</string>
+    <string name="st_failtoupdatepassword">Invalid old password</string>
+
+    <string name="st_failtoupload">Fail to upload, Retry</string>
+
+    <!--End of web service validation-->
+
+    <!--Landing strings-->
+    <string name="st_appname">Zaparound</string>
+    <string name="st_btnlogin">Login</string>
+    <string name="st_btnsignup">Sign up</string>
+
+    <!--Login page-->
+    <string name="st_usernamehint">Username</string>
+    <string name="st_passwirdhint">Password</string>
+    <string name="st_mylogin">Login to My Account </string>
+    <string name="st_forgotpassword">Forgot Password?</string>
+    <string name="st_newhere">New here? </string>
+    <string name="st_createacount">Create an account</string>
+    <string name="st_mandiatory">Try again</string>
+    <string name="st_validemail">Create an account</string>
+    <string name="st_invaliduser">Invalid Username or Password</string>
+    <string name="st_errorusernamehint">Username should not be empty</string>
+    <string name="st_errorpasswirdhint">Password should not be empty</string>
+    <!--send Vericication page-->
+    <string name="st_verificationusernamehint">Username or Email</string>
+    <string name="st_verSendbtn">Send Code</string>
+    <string name="st_vermessage">A verification code will be send to\nyour phone by text!</string>
+    <string name="st_invaliduseroremail">User or Email does not exit</string>
+
+    <!--verificatin page-->
+    <string name="st_verificationcodehint">Enter your code here</string>
+    <string name="st_verbtn">Verify</string>
+    <string name="st_verficationmessage">Sit tight! Your code has been sent to</string>
+    <string name="st_verresend">Resend the Code</string>
+
+    <!--Create account page1-->
+    <string name="st_usefirstrnamehint">First Name</string>
+    <string name="st_uselastrnamehint">Last Name</string>
+    <string name="st_emailhint">Email</string>
+    <string name="st_genderhint">Gender</string>
+    <string name="st_mobilehint">Mobile</string>
+    <string name="st_dateofbirthhint">Date of Birth</string>
+    <string name="st_publicfield">This field is public!</string>
+    <string name="st_privatefield">This field is private!</string>
+    <string name="st_createaccount">Create Account</string>
+    <string name="st_nextbtn">Next</string>
+    <string name="st_malegende">Male</string>
+    <string name="st_femalegender">Female</string>
+    <string name="st_useridhint">User id</string>
+    <string name="st_useriderror">User id</string>
+    <string name="st_username">Username</string>
+    <string name="st_mobilenumber">Mobile Number</string>
+
+    <string name="st_errormandatory">All Fields Are Mandatory</string>
+    <string name="st_errorpersonname">Invalid First Name</string>
+    <string name="st_errorpersonLastname">Invalid Last Name</string>
+    <string name="st_erroremail">Invalid Email</string>
+    <string name="st_errormobileno">Invalid Mobile Number</string>
+    <string name="st_errorusernamelength">Username must be at least 3 characters length</string>
+    <string name="st_errorfirstnamelength">Firstname must be at least 3 characters length</string>
+    <string name="st_errorLastnamelength">Lastname must be at least 3 characters length</string>
+    <string name="st_errorOtplength">Verification code should be 6 digits</string>
+    <!--Create account page2-->
+    <string name="st_confirmpassHint">Confirm Password</string>
+    <string name="st_usernamepublic">Username is public</string>
+    <string name="st_errorpasswordimssmatch">Password does not Match</string>
+    <string name="st_errorpasswordlength">Password must be 6 to 20 characters length</string>
+    <string name="st_invaliduserpass">Invalid username or password</string>
+
+    <!--Create account page3-->
+    <string name="st_buttonregister">Register</string>
+    <string name="st_terms">Terms of use</string>
+    <string name="st_intrests">You can choose up to 7 interests</string>
+    <string name="st_termstitle">Terms of use</string>
+    <string name="st_errorintrests">Please choose only 7 interest.</string>
+
+    <!--tabhost Activity-->
+    <string name="st_count">0</string>
+    <string name="st_age">Age</string>
+    <string name="st_checkintoolbar">Check-in</string>
+
+    <!--Check in page 1-->
+    <string name="st_nolocationfound">No locations found</string>
+    <string name="st_gpsoffmess">GPS if off,Click to enable GPS</string>
+    <string name="st_enablebtn">Enable GPS</string>
+    <string name="st_refresh">Refresh</string>
+
+    <string name="st_nouserfoundtext">No user found</string>
+    <string name="st_noZaps">No Zaps</string>
+
+    <!--Swip recycleview text-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="crash_toast_text">App Crashed !!! Report has been sent to developer</string>
+
+    <string name="crash_dialog_title">Alert</string>
+    <string name="crash_dialog_text">OOPS!!!An unexpected error</string>
+    <string name="crash_dialog_comment_prompt">Comments</string>
+    <string name="crash_dialog_ok_toast">Thank you!</string>
+    <string name="crash_user_email_label" />
+    <integer name="photo_list_preview_columns">2</integer>
+
+    <string name="nav_drawer_recently_added">Recently Added</string>
+    <string name="toast_saved">Wallpapaer saved to #</string>
+    <string name="toast_saved_failed">Sorry! Failed to save wallpaper</string>
+    <string name="toast_wallpaper_set">Wallpapaer updated!</string>
+    <string name="toast_wallpaper_set_failed">Sorry! Unable to set wallpapaer</string>
+    <string name="splash_error">Unable to download wallpapers. Verify your google\'s user name in settings or device doesn\'t have internet connection!</string>
+    <string name="set_wallpaper">Set</string>
+    <string name="download_wallpaper">Download</string>
+    <string name="msg_unknown_error">Sorry! Unknown error occurred.</string>
+    <string name="msg_wall_fetch_error">Sorry! Unable to fetch wallpaper(s). Verify app settings or device doesn\'t have internet connection.</string>
+    <string name="toast_enter_google_username">Please enter google username</string>
+    <string name="toast_enter_valid_grid_columns">Please enter valid number of columns</string>
+    <string name="toast_enter_gallery_name">Please enter gallery directory name</string>
+    <string name="lbl_google_username">Google username</string>
+    <string name="lbl_no_grid_columns">Number of grid columns</string>
+    <string name="lbl_gallery_name">Gallery directory name</string>
+    <string name="lbl_btn_save">Save</string>
+
+    <!--Checkin Zaparound-->
+    <string name="st_clear">Clear</string>
+    <string name="st_zaptext">ZAP!</string>
+    <string name="st_accept">Accept</string>
+    <string name="st_deny">Deny</string>
+    <string name="st_zappedme">Zaps</string>
+    <string name="st_zaparound">Who\'s here?</string>
+    <string name="st_interests">Similar interests</string>
+    <string name="st_zapfeed">Zap feed</string>
+    <string name="st_message">Message</string>
+    <!--Pop up Checkout-->
+    <string name="st_checkout_subtext">Are you sure you want to checkout from \n this location</string>
+    <string name="st_checkout_text">Check Out</string>
+    <string name="st_yes">Yes</string>
+    <string name="st_no">No</string>
+    <string name="st_clear_subtex">Do you want to clear this user?</string>
+    <string name="st_clear_text">Clear?</string>
+    <string name="st_Zap_subtex">Do you want to Zap this user?</string>
+    <string name="st_ZAp_text">ZAP!</string>
+    <string name="st_deny_subtex">Do you want to deny this request?</string>
+    <string name="st_deny_text">Deny?</string>
+    <string name="st_accept_subtex">Do you want to accept this user?</string>
+    <string name="st_accept_text">Accept!</string>
+    <string name="st_blank_text">Work in Progress</string>
+    <string name="st_similarintrests_text">Similar interests</string>
+    <string name="st_NOsimilarintrests_text">No similar interests</string>
+    <string name="st_NOcity_text">No city found</string>
+    <string name="st_NOtine_text">No time found</string>
+
+
+    <!--Map popup text-->
+    <string name="st_mapnotification_title">Set radius for top\n Zaparound locations</string>
+    <string name="st_miles">Miles</string>
+    <string name="st_min">Min</string>
+    <string name="st_max">Max</string>
+    <string name="st_1miles">1 Miles</string>
+    <string name="st_50miles">50 Miles</string>
+
+    <!--Map Activity-->
+    <string name="st_taptochange">Tap to change</string>
+    <string name="st_radiusfor">My Radius </string>
+    <string name="st_toplocations">Hottest nearby locations </string>
+    <string name="st_mapsampletext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n\n It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </string>
+    <string name="st_getdirection">Get directions</string>
+    <string name="st_maptoolbar">Nearby</string>
+
+    <!--Contact Activity-->
+    <string name="st_toptitle">In my location(</string>
+    <string name="st_allcontacts">All Connections(</string>
+    <string name="st_closing_Bracket">)</string>
+    <string name="st_nocontacts">No Connections</string>
+    <string name="st_nouserfound">No Connections found</string>
+    <string name="st_Messages">No Messages</string>
+
+    <!--Chat list-->
+    <string name="st_time">02.16 pm</string>
+    <string name="st_chat">Chat</string>
+    <string name="st_clearall">Clear All</string>
+    <string name="st_cancel">Cancel</string>
+    <string name="st_selected">Selected</string>
+    <string name="st_clearallpopup">Clear All?</string>
+    <string name="st_chatclear_subtext">Are you sure you want to clear all messages?</string>
+    <string name="st_search">Search</string>
+
+    <!--Settings page-->
+    <string name="st_myprofile">My profile</string>
+    <string name="st_invitefriends">Invite friends</string>
+    <string name="st_appsetting">App setting</string>
+    <string name="st_leagalpolicy">Legal policy</string>
+    <string name="st_support">Support</string>
+    <string name="st_logout">Logout</string>
+    <!--App setting page-->
+    <string name="st_notificationtitle">Notification</string>
+    <string name="st_notificationtext">Push Notification</string>
+    <string name="st_shoemyage">Show my age</string>
+    <string name="st_public">Public</string>
+    <string name="st_private">Private</string>
+    <string name="st_appsettingtollbar">App Settings</string>
+    <!--Change password-->
+    <string name="st_oldpassHint">Old Password</string>
+    <string name="st_oldpassworderror">old pass</string>
+    <string name="st_confirmpasswordHint">Confirm Password</string>
+    <string name="st_confirmpassworderror">confirm pass</string>
+    <string name="st_newpassHint">New Password</string>
+    <string name="st_newpassworderror">New pass</string>
+    <string name="st_update">Update</string>
+    <string name="st_changepassword">Change Password</string>
+    <!--My Profile-->
+    <string name="st_tapheretext">Tap here to change password</string>
+    <string name="st_editprofile">Edit Profile</string>
+    <string name="st_myprofiletext">My Profile</string>
+
+    <!--Invite Friends-->
+    <string name="st_invitefriendstollbar_title">Invite Friends</string>
+    <string name="st_invitenow">Invite Now</string>
+    <string name="st_friendsselected">Friends Selected</string>
+    <string name="st_noinvitecontacts">No contact to invite.</string>
+    <!--Legal policy page-->
+    <string name="st_legaltollbar_title">Legal Policy</string>
+    <string name="st_privacypolicy">Privacy Policy</string>
+    <string name="st_termsofuse">Terms of use</string>
+
+    <!--Privacy policy page-->
+    <string name="st_Privacytollbar_title">Privacy policy</string>
+    <string name="st_Zapprivacypolicy">Zaparound Privacy Policy</string>
+    <string name="st_updated">Last Updated:</string>
+    <string name="st_updateddate">March 31,2016</string>
+
+    <!--Support-->
+    <string name="st_submit">Submit</string>
+    <string name="st_supporthint">Write your comment here</string>
+    <string name="st_norecord">No record found</string>
+    <!--Set newPassword page-->
+    <string name="st_newpasscomfirn">Your OTP has been verified successfully!</string>
+    <string name="st_setnewpass">Set New Password</string>
+
+    <string name="st_enablecamera">Enable camera and read storage permissions</string>
+    <string name="st_enablecontacts">Enable read phone contacts permission</string>
+
+    <!--Setting page-->
+    <string name="st_logouttext">Logout..!</string>
+    <string name="st_logoutsubtext">Do you want to Logout?</string>
+
+    <!--Contacts Page-->
+    <string name="st_contacts">Connections</string>
+    <string name="st_feets">fts</string>
+    <!--Privacy policy page-->
+    <string name="st_termsofusetollbar_title">Terms of use</string>
+    <string name="st_termsofusetitle">Terms of use</string>
+
+    <!--Chat Window-->
+    <string name="st_sendbtn">Send</string>
+    <string name="st_typemessagehint">Type a message here</string>
+
+    <!--Update version text-->
+    <string name="st_update_app">To get the latest Feature, you should update Zaparound now</string>
+    <string name="st_update_app2">To continue using Zaparound,\nPlease install new Version</string>
+    <string name="st_update_avilable">Update Available</string>
+    <string name="st_later">Later</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#200935</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="LandingcolorPrimaryDark">#8b246d</color>
+
+    <!--Landing panging-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#ff888888</color>
+    <color name="bg_clolor">#f0f0f0</color>
+    <color name="text_color">#333333</color>
+    <color name="line_clolor">#e4e4e4</color>
+    <color name="subtext_color">#707070</color>
+    <color name="buttonbg_color">#40205b</color>
+
+    <!--Login page-->
+    <color name="edittextbg_color">#512e5d</color>
+    <color name="edittextborder_color">#b949184c</color>
+    <color name="edittexthint_color">#9b6faa</color>
+    <color name="edittextvalidation_color">#5e205f</color>
+    <color name="transprant_color">#00000000</color>
+    <color name="loginbtn_color">#8e236e</color>
+
+    <!--Tab host colors-->
+    <color name="greencount_color">#35ae81</color>
+    <color name="bottombackground_color">#E3E3E3</color>
+    <color name="toolbarbackground_color">#200935</color>
+    <!--Snack bar color-->
+    <color name="snackbar_background">#35ae81</color>
+    <color name="snackbar_subtextcolor">#7feec5</color>
+    <color name="st_checkintextcolor">#40205b</color>
+<!--check in color-->
+    <color name="cl_bottomborder">#cfcece</color>
+    <color name="cl_miles">#676767</color>
+    <color name="rowback_color">#f9ecff</color>
+
+    <!--TabScript colors-->
+    <color name="psts_background_tab_pressed">#1AFFFFFF</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+
+    <!--swip colors-->
+    <color name="window_background">#f9f9f9</color>
+    <color name="primary">#673AB7</color>
+    <color name="primaryDark">#512DA8</color>
+
+    <!--deep orange-->
+    <color name="md_deep_orange_50">#FBE9A7</color>
+    <color name="md_deep_orange_100">#FFCCBC</color>
+    <color name="md_deep_orange_200">#FFAB91</color>
+    <color name="md_deep_orange_300">#FF8A65</color>
+    <color name="md_deep_orange_400">#FF7043</color>
+    <color name="md_deep_orange_500">#FF5722</color>
+    <color name="md_deep_orange_600">#F4511E</color>
+    <color name="md_deep_orange_700">#E64A19</color>
+    <color name="md_deep_orange_800">#D84315</color>
+    <color name="md_deep_orange_900">#BF360C</color>
+    <color name="md_deep_orange_A100">#FF9E80</color>
+    <color name="md_deep_orange_A200">#FF6E40</color>
+    <color name="md_deep_orange_A400">#FF3D00</color>
+    <color name="md_deep_orange_A700">#7db0e0ff</color>
+
+    <!--Check in Zaparound-->
+    <color name="cl_clear">#e35e55</color>
+    <color name="cl_zap">#35ae81</color>
+    <color name="cl_popup">#505050</color>
+
+    <!--Map notification colors -->
+    <color name="cl_seekbardefault">#d9d9d9</color>
+    <color name="cl_popupsubtextcolor">#a2a2a2</color>
+    <color name="cl_4milesbg">#77195b</color>
+    <color name="cl_tap">#eea0d7</color>
+
+    <color name="cl_circlefill">#7db0e0ff</color>
+    <color name="cl_circlevorder">#578ab2</color>
+    <color name="cl_allcontacts">#f7f7f7</color>
+    <color name="cl_liveborder">#e6e6e6</color>
+   <!--Setting page-->
+    <color name="cl_settingedittextbg">#edecec</color>
+    <color name="cl_edittextcolor">#888888</color>
+
+</resources>

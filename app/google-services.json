@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "358888087394",
+    "firebase_url": "https://zaparound-e59c5.firebaseio.com",
+    "project_id": "zaparound-e59c5",
+    "storage_bucket": "zaparound-e59c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358888087394:android:cdd4e83cbeebd80f",
+        "android_client_info": {
+          "package_name": "com.zaparound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358888087394-c3iv4blujkube48ic8mago2cn389hc51.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiskvtXmOwXaZRpEXPcsgwCkyoV9K0L10"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

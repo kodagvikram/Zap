@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zaparound.LegalPolicyActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transprant_color">
+
+        <include
+            android:id="@+id/tool_bar1"
+            layout="@layout/toolbar" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarLayout"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/transprant_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/transprant_color">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transprant_color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_firstnamevalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/st_Zapprivacypolicy"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/st_checkintextcolor" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transprant_color">
+                        <TextView
+                            android:id="@+id/tv_lastnametitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/st_updated"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/subtext_color" />
+                        <TextView
+                            android:id="@+id/tv_updateddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/st_updateddate"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/subtext_color" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cl_bottomborder" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:background="@color/transprant_color">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/transprant_color">
+                    <TextView
+                        android:id="@+id/tv_desctiptiontext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|center"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/st_mapsampletext"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+                </RelativeLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+</RelativeLayout>

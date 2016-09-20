@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/tickimage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:contentDescription="@string/app_name"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center|left|start"
+        android:src="@drawable/tab_three_active"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@+id/tickimage"
+        android:layout_toEndOf="@+id/tickimage"
+        android:paddingLeft="@dimen/design_snackbar_padding_horizontal"
+        android:paddingStart="@dimen/design_snackbar_padding_horizontal"
+        android:paddingEnd="@dimen/design_snackbar_padding_horizontal"
+        android:paddingRight="@dimen/design_snackbar_padding_horizontal"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_gravity="center|left|start"
+        >
+
+        <TextView
+            android:id="@+id/snackbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dhsdjfhdshf"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/snackbar_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/snackbar_text"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone"
+            android:maxLines="2"
+            android:text="dhsdjfhdshf"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/snackbar_action"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_weight="0.01"
+        android:layout_marginLeft="@dimen/design_snackbar_extra_spacing_horizontal"
+        android:layout_marginStart="@dimen/design_snackbar_extra_spacing_horizontal"
+        android:layout_gravity="center_vertical|right|end"
+        android:paddingTop="@dimen/design_snackbar_padding_vertical"
+        android:paddingBottom="@dimen/design_snackbar_padding_vertical"
+        android:paddingLeft="@dimen/design_snackbar_padding_horizontal"
+        android:paddingRight="@dimen/design_snackbar_padding_horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/cross_icon"
+        android:visibility="visible"
+        android:textColor="?attr/colorAccent"
+        style="?attr/borderlessButtonStyle"/>
+
+</merge>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="2.5dip"
+        android:color="@color/cl_settingedittextbg" />
+    <solid
+
+        android:color="@color/cl_settingedittextbg" />
+    <corners
+        android:bottomLeftRadius="100dp"
+        android:topLeftRadius="100dp"
+        android:bottomRightRadius="100dp"
+        android:topRightRadius="100dp"
+        />
+    <padding
+        android:top="5dp"
+        android:bottom="5dp"
+        android:left="30dp"
+        android:right="30dp"
+        />
+</shape>

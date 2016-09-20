@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/white"
+    tools:context="com.zaparound.LegalPolicyActivity">
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transprant_color">
+        <include
+            android:id="@+id/tool_bar1"
+            layout="@layout/toolbar" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transprant_color"
+        android:layout_below="@+id/toolbarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transprant_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_myprofilelayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_myprofile"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/my_profile_icon" />
+
+                <TextView
+                    android:id="@+id/tv_myprofile"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_myprofile"
+                    android:layout_toRightOf="@+id/iv_myprofile"
+                    android:padding="10dp"
+                    android:text="@string/st_privacypolicy"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/cl_popup" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/gray_arrow_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/cl_bottomborder" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_invitefrindslayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_invitefrinds"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/invite_friend_icon" />
+
+                <TextView
+                    android:id="@+id/tv_invitefrinds"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_invitefrinds"
+                    android:layout_toRightOf="@+id/iv_invitefrinds"
+                    android:padding="10dp"
+                    android:text="@string/st_termsofuse"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/cl_popup" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/gray_arrow_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/cl_bottomborder" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

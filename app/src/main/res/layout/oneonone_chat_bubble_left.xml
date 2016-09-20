@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/transprant_color"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_rowtimelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/cl_bottomborder"/>
+        <TextView
+            android:id="@+id/header_textt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_back"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_rowtimelayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:padding="1px">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:maxWidth="250dp"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="#898989"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/leftbubbleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:background="@drawable/left_bubble_drawable"
+            android:padding="3dp">
+
+            <com.inscripts.custom.EmojiTextView
+                android:id="@+id/textViewMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:maxWidth="250dp"
+                android:text=""
+
+                android:textColor="#2c2c2c"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageViewImageMessage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:padding="2dp"
+                android:src="@drawable/thumbnail_default"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/textViewMessage"
+                android:layout_toRightOf="@id/textViewMessage"
+                android:text=""
+                android:textColor="#a7a6ab"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+<!--    <ImageView
+        android:id="@+id/imageViewmessageTicks"
+        android:layout_width="15dp"
+        android:layout_height="12dp"
+        android:layout_alignRight="@+id/rl_name"
+        android:layout_below="@+id/rl_name"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/iconsent"
+        android:visibility="gone" />
+-->
+</RelativeLayout>

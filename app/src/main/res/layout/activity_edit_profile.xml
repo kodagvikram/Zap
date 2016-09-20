@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zaparound.EditProfileActivity">
+
+            <RelativeLayout
+                android:id="@+id/toolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transprant_color">
+                <include
+                    android:id="@+id/tool_bar1"
+                    layout="@layout/toolbar" />
+            </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="@color/transprant_color"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transprant_color"
+            android:paddingBottom="20dp">
+            <LinearLayout
+                android:id="@+id/ll_Buttonlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/transprant_color"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_validation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_edittext_bg"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_validation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:focusable="true"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/cl_edittextcolor"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/setting_edittext_bg">
+
+                    <EditText
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/transprant_color"
+                        android:cursorVisible="false"
+                        android:inputType="text"
+                        android:textColor="@color/transprant_color">
+
+                        <requestFocus />
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/iv_userfirstimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/grayusername_icon_active" />
+
+                    <EditText
+                        android:id="@+id/et_userfirstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_userfirstprivateicon"
+                        android:layout_toRightOf="@+id/iv_userfirstimage"
+                        android:layout_toStartOf="@+id/iv_userfirstprivateicon"
+                        android:layout_toEndOf="@+id/iv_userfirstimage"
+                        android:textColor="@color/cl_edittextcolor"
+                        android:textColorHint="@color/cl_edittextcolor"
+                        android:textCursorDrawable="@null"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:background="@color/transprant_color"
+                        android:gravity="bottom"
+                        android:hint="@string/st_usefirstrnamehint"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:paddingBottom="13dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_userfirstprivateicon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dark_password_icon_active" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_edittext_bg">
+
+                    <ImageView
+                        android:id="@+id/iv_userlastimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/grayusername_icon_active" />
+
+                    <EditText
+                        android:id="@+id/et_userlastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_userlastprivateicon"
+                        android:layout_toRightOf="@+id/iv_userlastimage"
+                        android:layout_toStartOf="@+id/iv_userlastprivateicon"
+                        android:layout_toEndOf="@+id/iv_userlastimage"
+                        android:textColor="@color/cl_edittextcolor"
+                        android:textColorHint="@color/cl_edittextcolor"
+                        android:textCursorDrawable="@null"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:background="@color/transprant_color"
+                        android:gravity="bottom"
+                        android:hint="@string/st_uselastrnamehint"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="13dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_userlastprivateicon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dark_password_icon_active" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_edittext_bg">
+
+                    <ImageView
+                        android:id="@+id/iv_emailimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/grayemail_icon_active" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_emailprivateicon"
+                        android:layout_toRightOf="@+id/iv_emailimage"
+                        android:layout_toStartOf="@+id/iv_emailprivateicon"
+                        android:layout_toEndOf="@+id/iv_emailimage"
+                        android:background="@color/transprant_color"
+                        android:textColor="@color/cl_edittextcolor"
+                        android:textColorHint="@color/cl_edittextcolor"
+                        android:textCursorDrawable="@null"
+                        android:gravity="bottom"
+                        android:hint="@string/st_emailhint"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="40"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_emailprivateicon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/dark_password_icon_active" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_edittext_bg">
+
+                    <ImageView
+                        android:id="@+id/iv_genderimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/graygender_icon_active" />
+
+                    <EditText
+                        android:id="@+id/et_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_genderprivateicon"
+                        android:layout_toRightOf="@+id/iv_genderimage"
+                        android:layout_toStartOf="@+id/iv_genderprivateicon"
+                        android:layout_toEndOf="@+id/iv_genderimage"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:textColor="@color/cl_edittextcolor"
+                        android:textColorHint="@color/cl_edittextcolor"
+                        android:background="@color/transprant_color"
+                        android:textCursorDrawable="@null"
+                        android:onClick="selectGender"
+                        android:focusable="false"
+                        android:gravity="bottom"
+                        android:hint="@string/st_genderhint"
+                        android:inputType="textPersonName"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_genderprivateicon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/dark_password_icon_inactive" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/setting_edittext_bg">
+
+                    <ImageView
+                        android:id="@+id/iv_dateofbirthimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/graybirthday_icon_active" />
+
+                    <EditText
+                        android:id="@+id/et_dateofbirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_dateofbirthprivateicon"
+                        android:layout_toRightOf="@+id/iv_dateofbirthimage"
+                        android:layout_toStartOf="@+id/iv_dateofbirthprivateicon"
+                        android:layout_toEndOf="@+id/iv_dateofbirthimage"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:textColor="@color/cl_edittextcolor"
+                        android:textColorHint="@color/cl_edittextcolor"
+                        android:textCursorDrawable="@null"
+                        android:background="@color/transprant_color"
+                        android:focusable="false"
+                        android:onClick="DATETIMEPICKER"
+                        android:gravity="bottom"
+                        android:hint="@string/st_dateofbirthhint"
+                        android:inputType="textPersonName"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_dateofbirthprivateicon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/dark_password_icon_inactive" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_edittext_bg">
+
+                    <ImageView
+                        android:id="@+id/iv_mobileimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/graymobile_icon_active" />
+
+                    <EditText
+                        android:id="@+id/et_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_mobileprivateicon"
+                        android:layout_toRightOf="@+id/iv_mobileimage"
+                        android:layout_toStartOf="@+id/iv_mobileprivateicon"
+                        android:layout_toEndOf="@+id/iv_mobileimage"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:textColor="@color/cl_edittextcolor"
+                        android:textColorHint="@color/cl_edittextcolor"
+                        android:textCursorDrawable="@null"
+                        android:background="@color/transprant_color"
+                        android:gravity="bottom"
+                        android:hint="@string/st_mobilehint"
+                        android:inputType="numberDecimal"
+                        android:maxLength="15"
+                        android:paddingBottom="13dp"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_mobileprivateicon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/dark_password_icon_active" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_edittext_bg">
+
+                    <ImageView
+                        android:id="@+id/iv_useridimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/grayusername_icon_active" />
+
+                    <EditText
+                        android:id="@+id/et_userid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_useridprivateicon"
+                        android:layout_toRightOf="@+id/iv_useridimage"
+                        android:layout_toStartOf="@+id/iv_useridprivateicon"
+                        android:layout_toEndOf="@+id/iv_useridimage"
+                        android:textColor="@color/cl_edittextcolor"
+                        android:textColorHint="@color/cl_edittextcolor"
+                        android:textCursorDrawable="@null"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:background="@color/transprant_color"
+                        android:gravity="bottom"
+                        android:hint="@string/st_useridhint"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="13dp"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <ImageView
+                        android:id="@+id/iv_useridprivateicon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/app_name"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dark_password_icon_inactive" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/bt_Loginbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/login_btn_background"
+                        android:onClick="Createaccount"
+                        android:focusable="true"
+                        android:text="@string/st_update"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

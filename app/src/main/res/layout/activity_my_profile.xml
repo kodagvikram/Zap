@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.zaparound.MyProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transprant_color">
+
+        <include
+            android:id="@+id/tool_bar1"
+            layout="@layout/toolbar" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarLayout"
+        android:overScrollMode="never"
+        android:background="@color/transprant_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transprant_color">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transprant_color"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transprant_color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_firstnametitle"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_usefirstrnamehint"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+
+                    <TextView
+                        android:id="@+id/tv_firstnamevalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_notificationtitle"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/st_checkintextcolor" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cl_bottomborder" />
+
+                    <TextView
+                        android:id="@+id/tv_lastnametitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/st_uselastrnamehint"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+
+                    <TextView
+                        android:id="@+id/tv_lastnamevalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_shoemyage"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/st_checkintextcolor" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cl_bottomborder" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transprant_color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_usernametitle"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_username"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+
+                    <TextView
+                        android:id="@+id/tv_usernamevalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_notificationtitle"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/st_checkintextcolor" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cl_bottomborder" />
+
+                    <TextView
+                        android:id="@+id/tv_passwordtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/st_passwirdhint"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transprant_color">
+
+                        <TextView
+                            android:id="@+id/tv_passwordvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="45dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bottom_border_appcolor"
+                            android:singleLine="true"
+                            android:text="@string/st_tapheretext"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/st_checkintextcolor" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="17dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/gray_arrow_icon" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_changepass"
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cl_bottomborder" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transprant_color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_emailtitle"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_emailhint"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+
+                    <TextView
+                        android:id="@+id/tv_emailvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_notificationtitle"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/st_checkintextcolor" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cl_bottomborder" />
+                    <TextView
+                        android:id="@+id/tv_dateofbirthtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:text="@string/st_dateofbirthhint"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+
+                    <TextView
+                        android:id="@+id/tv_dateofbirthvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_shoemyage"
+                        android:visibility="gone"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/st_checkintextcolor" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        android:background="@color/cl_bottomborder" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/transprant_color"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_gendertitle"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_genderhint"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+
+                    <TextView
+                        android:id="@+id/tv_gendervalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_notificationtitle"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/st_checkintextcolor" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cl_bottomborder" />
+                    <TextView
+                        android:id="@+id/tv_mobilenumbertitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/st_mobilenumber"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/subtext_color" />
+
+                    <TextView
+                        android:id="@+id/tv_mobilenumbervalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/st_shoemyage"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/st_checkintextcolor" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/cl_bottomborder" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <Button
+                        android:id="@+id/bt_Loginbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/login_btn_background"
+                        android:focusable="true"
+                        android:text="@string/st_editprofile"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

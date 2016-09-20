@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transprant_color"
+    android:orientation="vertical">
+
+    <!-- Top View,  Row itemView of RecyclerView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_backcolor"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:clickable="false"
+            android:background="@color/white" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="90dp"
+            android:alpha="0.8"
+            android:background="@color/cl_seekbardefault"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_checkin_adaptermaillayout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true">
+
+            <com.zaparound.UserMyChatCircularLogoPicture
+                android:id="@+id/iv_checkinlogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/dummy_user_icon" />
+            <RelativeLayout
+                android:id="@+id/rl_imageclick"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:background="@color/transprant_color"/>
+
+            <ImageView
+                android:id="@+id/iv_gendericon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/colormale_icon" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/iv_checkinlogo"
+                android:layout_toRightOf="@+id/iv_checkinlogo"
+                android:background="@color/transprant_color">
+
+                <TextView
+                    android:id="@+id/tv_checkintitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/st_checkintextcolor" />
+                <TextView
+                    android:id="@+id/tvunreadcount"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/tv_checkintitle"
+                    android:layout_toRightOf="@+id/tv_checkintitle"
+                    android:layout_alignBaseline="@+id/tv_checkintitle"
+                    android:background="@drawable/small_green_count"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/bt_miles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="13dp"
+                    android:paddingStart="13dp"
+                    android:paddingRight="13dp"
+                    android:paddingEnd="13dp"
+                    android:layout_below="@+id/tv_checkintitle"
+                    android:background="@drawable/checkin_list_buttonback"
+                    android:clickable="false"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/cl_miles" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

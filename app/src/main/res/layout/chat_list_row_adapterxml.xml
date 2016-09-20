@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <!--Bottom View For Right to Left-->
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:background="@color/cl_clear"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvclear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/st_clear"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <!-- Another Bottom View For Left to Right -->
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper1"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:background="@color/cl_zap"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvchatmessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/st_message"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Top View,  Row itemView of RecyclerView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_backcolor"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:background="@color/white"
+            android:clickable="false" />
+
+        <RelativeLayout
+            android:id="@+id/rl_checkin_adaptermaillayout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true">
+            <ToggleButton
+                android:id="@+id/chkState"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/chat_delete_tuggle"
+                android:checked="false"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textOff=""
+                android:textOn=""
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:id="@+id/rl_toggleclick"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:visibility="gone"/>
+
+            <com.zaparound.CircularImageWithSmallBorder
+                android:id="@+id/iv_checkinlogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:adjustViewBounds="true"
+                android:layout_toRightOf="@+id/chkState"
+                android:layout_toEndOf="@+id/chkState"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/dummy_user_icon" />
+
+            <RelativeLayout
+                android:id="@+id/rl_imageclick"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/chkState"
+                android:layout_toEndOf="@+id/chkState"
+                android:background="@color/transprant_color" />
+
+            <RelativeLayout
+                android:id="@+id/rl_rightlayout"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/transprant_color">
+
+                <TextView
+                    android:id="@+id/tv_Sample"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:singleLine="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/st_zaptext"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/st_checkintextcolor"
+                    android:visibility="invisible" />
+
+
+                <ImageView
+                    android:id="@+id/iv_liveicon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/tv_Sample"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="invisible"
+                    android:src="@drawable/small_green_count" />
+
+
+                <TextView
+                    android:id="@+id/tvtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/cl_miles"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/middlelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toLeftOf="@+id/rl_rightlayout"
+                android:layout_toStartOf="@+id/rl_rightlayout"
+                android:layout_toEndOf="@+id/iv_checkinlogo"
+                android:layout_toRightOf="@+id/iv_checkinlogo"
+                android:background="@color/transprant_color">
+
+                <TextView
+                    android:id="@+id/tv_checkintitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/st_checkintextcolor" />
+
+                <TextView
+                    android:id="@+id/tv_lastmessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_checkintitle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="7dp"
+                    android:clickable="false"
+                    android:text=""
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/cl_miles" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>
+

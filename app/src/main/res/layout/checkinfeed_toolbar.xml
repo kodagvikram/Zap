@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/toolbarbackground_color"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transprant_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_Checkinicon"
+            android:layout_toStartOf="@+id/iv_Checkinicon"
+            android:layout_toRightOf="@+id/iv_checksetting"
+            android:layout_toEndOf="@+id/iv_checksetting"
+            android:background="@color/transprant_color">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+               android:layout_centerHorizontal="true"
+                android:background="@color/transprant_color">
+            <ImageView
+                android:id="@+id/iv_checklogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/checkinlogo" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/iv_checklogo"
+                android:layout_toRightOf="@+id/iv_checklogo"
+                android:singleLine="true"
+                android:text="@string/st_zapfeed"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/tv_checkintitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/iv_checklogo"
+                android:layout_toRightOf="@+id/iv_checklogo"
+                android:layout_below="@+id/tv_title"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/edittexthint_color"
+                android:textStyle="normal" />
+                </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/iv_checksetting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/settingicon" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_gendericon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="08dp"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/gender_icon" />
+        <ImageView
+            android:id="@+id/iv_Checkinicon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="08dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_gendericon"
+            android:layout_toStartOf="@+id/iv_gendericon"
+            android:contentDescription="@string/app_name"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/checkinicon" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>
